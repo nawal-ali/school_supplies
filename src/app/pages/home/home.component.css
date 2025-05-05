@@ -1,0 +1,18 @@
+.getting-started-card{
+    transition: all 200ms ease-in-out;
+    cursor: pointer;
+}
+.getting-started-card:hover{
+    box-shadow: 5px 5px 25px 10px rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px); 
+}
+.getting-started-card:hover .getting-started-card-details{
+    opacity: 1; 
+    transform: translateY(0);
+    transition: all 200ms ease-in-out;
+}
+.getting-started-card-details{
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(100px);
+}
