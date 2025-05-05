@@ -1,6 +1,7 @@
 .getting-started-card{
     transition: all 200ms ease-in-out;
     cursor: pointer;
+    overflow: hidden;
 }
 .getting-started-card:hover{
     box-shadow: 5px 5px 25px 10px rgba(0, 0, 0, 0.3);
@@ -15,4 +16,21 @@
     z-index: 3;
     opacity: 0;
     transform: translateY(100px);
+}
+.for-text{
+    margin: 12rem;
+    z-index: 2;
+    font-size: 4rem;
+}
+
+/* ---------------------------- media -------------------------- */
+@media (max-width: 768px) {
+    .for-text{
+        font-size: 3rem;
+    }
+}
+@media (max-width: 380px) {
+    .for-text{
+        font-size: 2rem;
+    }
 }
